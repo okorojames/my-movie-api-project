@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap");
+:root {
+  --dark-one: #212529;
+  --dark-two: #090614;
+  --dark-thre: #130c27;
+  --light-one: #f3f0ff;
+  --pure-light: #fff;
+  --red-one: #b32727;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+img {
+  width: 100%;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background: var(--dark-two);
+  font-size: 1.8rem;
+  color: var(--light-one);
+}
+header {
+  background: var(--light-one);
+  color: var(--dark-thre);
+}
+nav {
+  padding: 2rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-col-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8rem;
+}
+.navLogo {
+  width: 50px;
+  filter: invert(0.3);
+  cursor: pointer;
+}
+.navLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}
+.navLink:visited,
+.navLink:link {
+  text-decoration: none;
+  color: var(--dark-thre);
+  font-weight: 600;
+  transition: 0.3s;
+}
+.navLink:hover,
+.navLink:active {
+  color: var(--red-one);
+}
+.searchMovieForm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.searchMovieForm input[type="text"] {
+  outline: 0;
+  border: 0;
+  box-shadow: 0 0 0 1.5px var(--red-one);
+  padding: 8px 3px 8px 4px;
+  border-radius: 0.8rem;
+}
+.searchMovieForm p {
+  display: flex;
+  align-items: center;
+  background: var(--red-one);
+  padding: 0.5rem;
+  border-radius: 0.8rem;
+  color: var(--light-one);
+  cursor: pointer;
+  gap: 0.5rem;
+}
+
+.searchMovieForm p input[type="submit"] {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 1.8rem;
+  color: var(--pure-light);
+  cursor: pointer;
+}
