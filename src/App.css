@@ -181,3 +181,35 @@ nav {
   display: block;
 }
 /*  */
+/*  */
+@media screen and (max-width: 992px) {
+  .popular-movie-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+/*  */
+/*  */
+@media screen and (max-width: 768px) {
+  .main-section-h2 {
+    font-size: 3.4rem;
+  }
+  .main-section-paragraph-one {
+    font-size: 1.9rem;
+  }
+  .popular-movie-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/*  */
+/*  */
+@media screen and (max-width: 576px) {
+  .main-section-h2 {
+    font-size: 3rem;
+  }
+  .main-section-paragraph-one {
+    font-size: 1.8rem;
+  }
+  .popular-movie-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
