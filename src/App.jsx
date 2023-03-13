@@ -9,7 +9,7 @@ function App() {
       "https://api.themoviedb.org/3/tv/popular?api_key=296b046a3d7afb8c7d9de3d141e11353&language=en-US&page=1"
     );
     const data = await res.json();
-    console.log(data.results);
+    // console.log(data.results);
     setMovies(data.results);
   }
   // end getting the movie data

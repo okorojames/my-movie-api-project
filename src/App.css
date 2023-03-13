@@ -29,8 +29,12 @@ body {
 header {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("./images/img-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: var(--light-one);
   margin-bottom: 6rem;
+  padding-bottom: 6rem;
 }
 nav {
   padding: 2rem 6rem;
@@ -173,7 +177,7 @@ nav {
 .movieDesc {
   display: none;
 }
-.showDesc .movieDesc {
+.showDesc.movieDesc {
   display: block;
 }
 /*  */
