@@ -23,6 +23,18 @@ const Header = () => {
           </form>
         </div>
       </nav>
+      {/*  */}
+      <main
+        className="main-section"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <h2 className="main-section-h2">Welcome To JNetFlix.</h2>
+        <p className="main-section-paragraph-one">
+          Download your favorite movies easily.
+        </p>
+        <i className="bx bx-chevron-down main-section-chevron-icon"></i>
+      </main>
     </header>
   );
 };

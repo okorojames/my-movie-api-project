@@ -24,16 +24,20 @@ body {
   background: var(--dark-two);
   font-size: 1.8rem;
   color: var(--light-one);
+  overflow-x: hidden;
 }
 header {
-  background: var(--light-one);
-  color: var(--dark-thre);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("./images/img-1.jpg");
+  color: var(--light-one);
+  margin-bottom: 6rem;
 }
 nav {
   padding: 2rem 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 8rem;
 }
 .nav-col-2 {
   display: flex;
@@ -55,7 +59,7 @@ nav {
 .navLink:visited,
 .navLink:link {
   text-decoration: none;
-  color: var(--dark-thre);
+  color: var(--light-one);
   font-weight: 600;
   transition: 0.3s;
 }
@@ -95,3 +99,81 @@ nav {
   color: var(--pure-light);
   cursor: pointer;
 }
+.main-section {
+  text-align: center;
+  padding: 0 6rem;
+}
+.main-section-h2 {
+  font-size: 4.4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.main-section-paragraph-one {
+  font-size: 2rem;
+  font-weight: 500;
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+}
+.main-section-chevron-icon {
+  font-size: 40px;
+  color: var(--red-one);
+  opacity: 0.8;
+  animation: moveMainSecIcon 3s infinite alternate-reverse;
+}
+@keyframes moveMainSecIcon {
+  from {
+    transform: translateY(5px);
+  }
+  to {
+    transform: translateY(-3px);
+  }
+}
+/*  */
+.popular-section {
+  padding: 0 6rem;
+}
+.popular-section-first-context {
+  text-align: center;
+  background: var(--light-one);
+  color: var(--dark-thre);
+  margin-bottom: 5rem;
+}
+.popular-movie-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 1rem;
+}
+.movie {
+  max-width: 18rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  background: transparent;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  padding-bottom: 0.5rem;
+  box-shadow: 0 1px 12px rgba(33, 37, 41, 0.357);
+}
+.movie-image {
+  width: 100%;
+}
+.movie-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+}
+.movie-date {
+  color: var(--red-one);
+  font-size: 1.1rem;
+}
+.movieDesc {
+  display: none;
+}
+.showDesc .movieDesc {
+  display: block;
+}
+/*  */
